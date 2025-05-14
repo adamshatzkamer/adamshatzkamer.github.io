@@ -53,6 +53,40 @@ a:active {
   background-color: #000;
   color: white;
 }
+.square-brackets-quote {
+  display:inline-block;
+  font-family:sans-serif;
+  margin:1em;
+  max-width:50em;
+}
+  blockquote {
+    border:solid 0.25em #fff;
+    display:inline-block;
+    margin:0;
+    padding:1em;
+    position:relative;
+  }
+    &:before {
+      background-color: #fff;
+      bottom: -1em;
+      content: "";
+      left: 2em;
+      position: absolute;
+      right: 2em;
+      top: -1em;
+    }
+    cite {
+      color:#ffff;
+      display: block;
+      font-size:small;
+      font-style: normal;
+      text-align: right;
+      text-transform:uppercase;
+    }
+    > * {
+      position: relative;
+      z-index: 1;
+    }
 </style>  
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-56HZEGMJ59"></script>
