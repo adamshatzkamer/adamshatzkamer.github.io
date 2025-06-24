@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Serve Website Locally",
+            "type": "shell",
+            "command": "python3",
+            "args": ["-m", "http.server", "8000"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "isBackground": true,
+            "problemMatcher": [],
+            "detail": "Serve the portfolio website on localhost:8000"
+        },
+        {
+            "label": "Open Website in Browser",
+            "type": "shell",
+            "command": "open",
+            "args": ["http://localhost:8000"],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Open the website in your default browser"
+        }
+    ]
+}
